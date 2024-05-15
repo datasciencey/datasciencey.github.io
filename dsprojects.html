@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -9,140 +9,87 @@
             font-size: 48px;
             text-align: center;
         }
-         .rbt {
+        .rbt {
             color: rosybrown;
             text-align: left;
+        }
+        .project-description {
+            width: 750px;
+            text-align: justify;
         }
     </style>
 </head>
 <body>
 
-    <table border="0" width="300">
     <h1 class="sbt">Data Science Projects</h1>
-    </table>
-        
-   <table border="0" bordercolor="lightgray" width="300">
-       <tr>
-       <h2 class="rbt">
-           Project 1: Automated Software Risk Assessment with Machine Learning
-       </h2>
-       </tr>
-   </table>
-         
 
-    <table border="0" width="750">
-        <tr>
-            <td>
-             This is about building a working system that assists with  <font color="slateblue"> real-time, granular </font> software QA. 
-             More specifically, the system assesses individual <font color="slateblue">code commits</font>, as any piece of code is committed into an
-                an evolving software project (repository), 
-             for the <font color="slateblue">risk of a fault </font>down the road. That assessment is based on various characteristics regarding
-                (i) an individual code commit itself, and (ii) the characteristics of the developers associated with the code and that particular code commit.
-                This fault risk assessment is arrived at, using machine learning.
+    <h2 class="rbt">Project 1: Automated Software Risk Assessment with Machine Learning</h2>
+    <p class="project-description">
+        This is about building a working system that assists with <i>real-time, granular</i> software QA.
+        More specifically, the system assesses individual <i>code commits</i>, as any piece of code is committed into
+        an evolving software project (repository), for the <i>risk of a fault</i> down the road. That assessment is based on various characteristics regarding
+        (i) an individual code commit itself, and (ii) the characteristics of the developers associated with the code and that particular code commit.
+        This fault risk assessment is arrived at, using machine learning.
 
-             <br>
-                <br>
-             The overall objective is to employ machine learning and data, to improve the efficiency in identifying risky i.e., 
-           likely to fault pieces of code in a software project, in a dynamic "as-the-software-project-evolves" manner.
-             
- <br>
-                <br>
-             This execrise offers interesting machine learning explorations including <font color="slateblue">sparse classification, anomaly detection, and automated machine learning </font>; 
-             and experience across the gamut of machine learning classifiers, with algorithms of (highly) varying complexity, illustrates the   
-                <font color="slateblue"> no-free-lunch-theorem-of-machine-learning </font> playing out in practice. 
-                 <br>
-                
-<b>Expected skill stack:</b> Python+Pandas, ScikiLearn, AutoML, LLM prompt-engineering <br>
-<b>Project material:</b> 
-                <ul>
-                    <li>
-                        The (SERA 2022) Paper that comprehenseively describes this project (accompanying slides)
-                    </li>
-                    <li>
-                        zip folder of database of details of 3.6M code commits, and characteristics of 60 developers, curated from over 50 (open) repositories from GitHub
-                    </li>
-                </ul>
-                 
+        <br><br>
+        The overall objective is to employ machine learning and data, to improve the efficiency in identifying risky i.e., likely to fault pieces of code in a software project, in a dynamic "as-the-software-project-evolves" manner.
+
+        <br><br>
+        This exercise offers interesting machine learning explorations including <i>sparse classification, anomaly detection, and automated machine learning</i>;
+        and experience across the gamut of machine learning classifiers, with algorithms of (highly) varying complexity, illustrates the
+        <i>no-free-lunch-theorem-of-machine-learning</i> playing out in practice.
     </p>
-            </td>
-       </tr>
+    <b>Expected skill stack:</b> Python+Pandas, ScikiLearn, AutoML, LLM prompt-engineering<br>
+    <b>Project material:</b>
+    <ul>
+        <li>The (SERA 2022) Paper that comprehensively describes this project (accompanying slides)</li>
+        <li>zip folder of database of details of 3.6M code commits, and characteristics of 60 developers, curated from over 50 (open) repositories from GitHub</li>
+    </ul>
 
-    </table>
-    <table border="0" bordercolor="lightgray" width="300">
-        <tr>
-           <h2 class="rbt">
-           Project 1: Privacy-preserving Federated Machine Learning
-       </h2>
-        </tr>
-    </table>
+    <h2 class="rbt">Project 2: Privacy-preserving Federated Machine Learning</h2>
+    <p class="project-description">
+        The objective is to realize a working <i>privacy-preserving federated machine learning</i> environment, over
+        a collection of related but otherwise distributed collection of multiple databases, in the clinical domain.
 
-    <table border="0" width="750">
-        <tr>
-    The objective is to realize a working <i>privacy-preserving federated machine learning </i> environment, over 
-    a collection of related but otherwise distributed collection of multiple databases, in the clinical domain.
-
-    <br> The machine learning concepts to understand, apply, and explore include <i>
-     federated machine learning, privacy-preservation, the utility-privacy tradeoff</i>. 
-            Additionally one could also investigate <i>homomorphic-encryption</i>.
+        <br> The machine learning concepts to understand, apply, and explore include <i>federated machine learning, privacy-preservation, the utility-privacy tradeoff</i>.
+        Additionally one could also investigate <i>homomorphic encryption</i>.
+    </p>
+    <b>Skill stack:</b> <a href="https://www.tensorflow.org/federated">TensorFlow Federated</a> (platform),
+    <a href="https://openmined.github.io/PySyft/">PySyft</a> (includes utilities for differential-privacy), and
+    <a href="https://github.com/Lab41/PySEAL">PySEAL</a> (if you venture into homomorphic-encryption).
     <br>
-<b>Skill stack:</b> <a href="https://www.tensorflow.org/federated">TensorFlow Federated</a> (platform),
-    <a href="https://openmined.github.io/PySyft/">PySyft </a> (includes utilities for differential-privacy), and 
-    <a href="https://github.com/Lab41/PySEAL">PySEAL</a> (if you venture into homorphic-encryption).
-    <br>
-    
-<b>Project material:</b> 
+    <b>Project material:</b>
     <ul>
         <li>
             Data: Use the <a href="https://eicu-crd.mit.edu/">eICU Collaborative Research Database</a>
             <ul>
-                <li> Here is suggestion for fragmenting (part of) eICU into 9 separate databases (that form the federation)</li>
+                <li>Here is a suggestion for fragmenting (part of) eICU into 9 separate databases (that form the federation)</li>
             </ul>
-            
         </li>
-        <li>
-            Here is a plan for evaluating the <i>utility-privacy trade-off </i> for your solution
-        </li>
+        <li>Here is a plan for evaluating the <i>utility-privacy trade-off</i> for your solution</li>
     </ul>
 
-    
-</tr>
-    </table>
+    <h2 class="rbt">Project 3: Machine Reading of Scientific Research Literature</h2>
+    <p class="project-description" style="font-family: 'Times New Roman', Times, serif;">
+        Problem: Develop a structured database, of materials science experimental data, from the text of multiple research papers
+        Customer: Scientist/Researcher that is currently getting this curated by hand
+        Concepts: information extraction: entity extraction, relation extraction, ontology application ; llm application: prompt-engineering for NLP applications;  llm solution cost-effectiveness: model distillation 
+        Skill stack: text extraction: LLM such as GPT4 ; model distillation: tensorflow (supports model distillation), tensorrt (model optimizer) 
+        Project material: zip folder 
+        semi-structured Json dataset of 300 materials science research papers
+        a few relevant papers 
+    </p>
 
+    <h2 class="rbt">Project 4: Knowledge Graph Predictive Analytics: Event Prediction</h2>
+    <p class="project-description" style="font-family: 'Times New Roman', Times, serif;">
+        Problem: Develop an event prediction solution where the events and contextual information are modeled as a Knowledge-Graph
+        Customer: None, this is a research problem in computer science
+        Concepts: knowledge-graphs, graph-predictions, event modeling, investigation of LLM for knowledge graph reasoning
+        Skill stack: LLM of choice
+        Project references
+        Recommended the POLECAT dataset : an open dataset of millions of time-stamped, geolocated, political events
+        Paper on Temporal Knowledge Graph Prediction Using In-context Learning
+    </p>
 
-<h2 class="rbt">
-Project 3: Machine Reading of Scientific Research Literature
-</h2>
-           <p style="font-family: 'Times New Roman', Times, serif;">
-Problem: Develop a structured database, of materials science experimental data, from the text of multiple research papers
-Customer: Scientist/Researcher that is currently getting this curated by hand
-Concepts: information extraction: entity extraction, relation extraction, ontology application ; llm application: prompt-engineering for NLP applications;  llm solution cost-effectiveness: model distillation 
-Skill stack: text extraction: LLM such as GPT4 ; model distillation: tensorflow (supports model distillation), tensorrt (model optimizer) 
-Project material: zip folder 
-semi-structured Json dataset of 300 materials science research papers
-a few relevant papers 
-           </p>
-       </tr>
-
-       <tr>
-<h2 class="rbt">
-           Project 4: Knowledge Graph Predictive Analytics: Event Prediction
-</h2>
-           <p style="font-family: 'Times New Roman', Times, serif;">
-Problem: Develop an event prediction solution where the events and contextual information are modeled as a Knowledge-Graph
-Customer: None, this is a research problem in computer science
-Concepts: knowledge-graphs, graph-predictions, event modeling, investigation of LLM for knowledge graph reasoning
-Skill stack: LLM of choice
-Project references
-Recommended the POLECAT dataset : an open dataset of millions of time-stamped, geolocated, political events
-Paper on Temporal Knowledge Graph Prediction Using In-context Learning
-   </p>
-       </tr>
-
-
-
-             </table>
-                 
 </body>
 </html>
-
-
