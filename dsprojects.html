@@ -80,14 +80,27 @@
     a collection of related but otherwise distributed collection of multiple databases, in the clinical domain.
 
     <br> The machine learning concepts to understand, apply, and explore include <i>
-     federated machine learning, privacy-preservation, the utility-privacy tradeoff</i> and <i>homomorphic-encryption</i>
+     federated machine learning, privacy-preservation, the utility-privacy tradeoff</i>. Additionally one could also investigate <i>homomorphic-encryption</i>.
     <br>
-Skill stack: tensor-flow federated (platform), pysyft (differential privacy), pyseal (homorphic encryption)
-Project material: zip folder 
-with pointer to open de-identified collection of health data tables, 
-suggested analysis tasks over the FML solution developed, 
-and a plan for the empirical evaluation of the utility-vs-privacy tradeoff.
-pointers to federated ml platforms and utilities to build upon
+<b>Skill stack:</b> <a href="https://www.tensorflow.org/federated">TensorFlow Federated</a> (platform),
+    <a href="https://openmined.github.io/PySyft/">PySyft </a> (includes utilities for differential-privacy), and 
+    < ahref="https://github.com/Lab41/PySEAL">PySEAL</ahref>a> (if you venture into homorphic-encryption).
+    <br>
+    
+<b>Project material:</b> 
+    <ul>
+        <li>
+            Data: Use the <a href="https://eicu-crd.mit.edu/">eICU Collaborative Research Database</a>
+            <ul>
+                <li> Here is suggestion for fragmenting (part of) eICU into 9 separate databases (that form the federation)</li>
+            </ul>
+            
+        </li>
+        <li>
+            Here is a plan for evaluating the <i>utility-privacy trade-off </i> for your solution
+        </li>
+    </ul>
+
     </p>
 </tr>
        <tr>
