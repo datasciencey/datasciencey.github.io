@@ -27,14 +27,30 @@
            Project 1: Automated Software Risk Assessment with Machine Learning
        </h2>
          <p style="font-family: 'Times New Roman', Times, serif;">
-    
-<b>Problem:</b> Develop a machine-learning based system that can identify individual code commits that are at future risk of fault. <br>
-<b>Customer:</b> Software project manager and/or QA team. <br>
-<b>Concepts:</b> sparse classification, anomaly detection, risk prediction, no-free-lunch-theorem-of-machine-learning <br>
+
+             <b> Introduction:</b> This is about building a working system that assists with  <i>"real-time"</i> and <i> granular</i>software QA. 
+             More specifically the system assesses individual code commits, as any piece of code is committed into a repository, 
+             for the risk of a fault down the road (further on in development). That assessment is based on various characteristics about (i) the individual code commit itself, and (ii) 
+             the characteristics of the developers associated with the code and is arrived at using machine learning.
+
+             <br>
+             The overall objective is to employ machine learning, and data, to improve the efficiency in identifying "risky" i.e., likely to fault pieces of code, and in a dynamic "as-the-project-evolves" manner.
+             
+ <br>
+             There are interesting machine learning applications including sparse classification, anomaly detection, and risk prediction to be explored.
+             This exercise also offers a practical experience with the implications of the <i><no-free-lunch-theorem-of-machine-learning </i>
+                 <br>
 <b>Skill stack:</b> pandas, scikit-learn, auto-ml, LLM prompt-engineering <br>
-<b>Project material:</b> zip folder with
-the paper (and slides) on this project
-the dataset curated from github <br>
+<b>Project material:</b> 
+                <ul>
+                    <li>
+                        The (SERA 2022) Paper that comprehenseively this project (also slides)
+                    </li>
+                    <li>
+                        zip folder of database of 3.6M commits and developers
+                    </li>
+                </ul>
+                 
     </p>
        </tr>
 
@@ -58,8 +74,10 @@ pointers to federated ml platforms and utilities to build upon
        <tr>
 
 
-
+<h2 class="rbt">
 Project 3: Machine Reading of Scientific Research Literature
+</h2>
+           <p style="font-family: 'Times New Roman', Times, serif;">
 Problem: Develop a structured database, of materials science experimental data, from the text of multiple research papers
 Customer: Scientist/Researcher that is currently getting this curated by hand
 Concepts: information extraction: entity extraction, relation extraction, ontology application ; llm application: prompt-engineering for NLP applications;  llm solution cost-effectiveness: model distillation 
@@ -67,12 +85,14 @@ Skill stack: text extraction: LLM such as GPT4 ; model distillation: tensorflow 
 Project material: zip folder 
 semi-structured Json dataset of 300 materials science research papers
 a few relevant papers 
-           
+           </p>
        </tr>
 
        <tr>
-
+<h2 class="rbt">
            Project 4: Knowledge Graph Predictive Analytics: Event Prediction
+</h2>
+           <p style="font-family: 'Times New Roman', Times, serif;">
 Problem: Develop an event prediction solution where the events and contextual information are modeled as a Knowledge-Graph
 Customer: None, this is a research problem in computer science
 Concepts: knowledge-graphs, graph-predictions, event modeling, investigation of LLM for knowledge graph reasoning
@@ -80,6 +100,7 @@ Skill stack: LLM of choice
 Project references
 Recommended the POLECAT dataset : an open dataset of millions of time-stamped, geolocated, political events
 Paper on Temporal Knowledge Graph Prediction Using In-context Learning
+   </p>
        </tr>
        
 </body>
