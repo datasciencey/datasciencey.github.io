@@ -20,6 +20,24 @@
             width: 750px;
             text-align: justify;
         }
+        .centered-name {
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+            font-family: 'Dancing Script', cursive; /* Applying the Google Font */
+            font-size: 14px; /* Adjust size as needed */
+            color: black; /* Font color */
+        }
+        .centered-name:before,
+        .centered-name:after {
+            content: "----------------------------------------";
+            color: gray; /* Set the color of the dashes to gray */
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .name {
+            padding: 0 10px; /* Adjust spacing around the name */
+        }
     </style>
 </head>
 <body>
@@ -56,7 +74,10 @@
          </ol>
     <p>
         <p>
-            <a href="https://www.linkedin.com/in/naveenashish/">Naveen Ashish </a>
+                <div class="centered-name">
+        <span class="name"> <a href="https://www.linkedin.com/in/naveenashish/">Naveen Ashish </a></span>
+    </div>
+            
         </p>
 </body>
 </html>
